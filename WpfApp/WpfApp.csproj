@@ -10,6 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="toastImageAndText.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Notifications.Wpf" Version="0.1.1" />
+    <PackageReference Include="OSVersionHelper" Version="1.0.8" />
+    <PackageReference Include="System.Runtime.WindowsRuntime" Version="4.3.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
     <Reference Include="Windows" Private="false" HintPath="$(MSBuildProgramFiles32)\Windows Kits\10\UnionMetadata\$(TargetPlatformVersion)\Windows.winmd" />
   </ItemGroup>
+
 </Project>
