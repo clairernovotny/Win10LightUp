@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using Notifications.Wpf;
 using OSVersionHelper;
@@ -30,6 +31,7 @@ namespace WpfApp
             }
         }
 
+        [MethodImpl(MethodImplOptions.NoInlining)]
         private void ShowToastUsingWindowsRuntime()
         {
             // Get a toast XML template
